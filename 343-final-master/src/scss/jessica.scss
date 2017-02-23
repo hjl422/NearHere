@@ -1,0 +1,220 @@
+p {
+    margin: 0;
+}
+
+// nav
+@media (max-width: 768px) {
+    .mdl-layout__header-row{
+        padding-left: 4px;
+        .mdl-navigation{
+            .mdl-navigation__link{
+                padding: 0px 4px;
+            }
+        }
+    }
+}
+
+.d-cont{
+    height: calc(100% - 64px);
+    overflow: hidden;
+    .mdl-layout__inner-container{
+        overflow: hidden;
+    }
+}
+
+.jb-container-msg {
+    width: 100%;
+    @media (min-width: 1024px) {
+        margin-left: 240px;
+        width: calc(100% - 240px);
+    }
+    overflow-y: scroll;
+    padding: 0 0px;
+    //height: 450px;
+    .jb-container-center{
+        max-width: 720px;
+        margin: 0 auto;
+        overflow-y: auto;
+        padding-bottom: 67px;
+    }
+}
+
+.message-list {
+    padding-top: 15px;
+    width: 80%;
+    margin: 0 auto;
+    //overflow-y: hidden;
+}
+
+.profile-pic {
+    display: inline-block;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.mdl-layout__header {
+    background-color: #EF5350;
+}
+
+.messages, .messages-user{
+    //width: 400px;
+    margin: 5px 0px;
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.messages-user {
+    justify-content: flex-end;
+}
+
+.messages {
+    justify-content: flex-start;
+}
+
+.message-content {
+    max-width: 300px;
+}
+
+.post-content {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.new-message-form {
+    max-width: 720px;
+    width: calc(100% - 17px);
+    @media (min-width: 1024px) {
+        width: calc(100% - 240px);
+    }
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    text-align: left;
+}
+.message-title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .user-name {
+        font-weight: bold;
+        display: inline;
+    }
+    .time-stamp {
+        padding-left: 8px;
+        font-size: 80%;
+        color: #999999;
+        display: inline;
+    }
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+    background-color: #EF5350;
+}
+
+.login {
+    margin: auto;
+    width: 100%;
+}
+
+.card {
+    width: 600px;
+    margin: auto auto 30px auto;
+}
+
+.right-align {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+}
+
+.profile-link {
+    font-size: 25px;
+    color: #EF5350;
+}
+
+.profile-link:link, .profile-link:active, .profile-link:hover, .profile-link:visited, {
+    text-decoration: none;
+}
+
+.delete-button {
+    margin-top: 20px;
+    float: right
+}
+
+.sel-container {
+    margin: auto auto 30px auto;
+    //width: 48%;
+    display: block;
+}
+
+#sel {
+    width: 600px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.sort-select {
+    text-align: center;
+}
+
+
+
+.sort-type-active {
+    background-color: #FF6360 !important;
+}
+
+
+@media (min-width: 768px) {
+    form {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+    
+    form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .profile-link {
+        font-size: 12pt !important;
+        width: 150px;
+        display: block;
+        clear: left;
+    }
+
+    .card {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .mdl-card__title {
+        display: inline-block;
+    }
+
+    .time-stamp {
+        float: left;
+        clear: left;
+    }
+
+    .right-align {
+        position: relative;
+    }
+
+}
+
+.sign-form{
+    text-align: center;
+}
